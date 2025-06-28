@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Blocker</title>
+  <link rel="stylesheet" type="text/css" href="sidepanel.css">
+</head>
+<body>
+  <div class="header">
+    <h1>AI & Element Blocker</h1>
+    <p>Block intrusive AI and other web elements.</p>
+  </div>
+
+  <div class="toggle-container">
+    <div class="toggle-text-wrapper">
+      <label class="toggle-label" for="automatic-blocker-toggle">Automatic Blocker</label>
+      <p class="toggle-description">Blocks known AI buttons & UI elements across websites.</p>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="automatic-blocker-toggle" checked>
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="toggle-container">
+    <div class="toggle-text-wrapper">
+      <label class="toggle-label" for="manual-blocker-toggle">Manual Blocker</label>
+      <p class="toggle-description">Blocks the custom elements you have personally selected.</p>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="manual-blocker-toggle" checked>
+      <span class="slider round"></span>
+    </label>
+  </div>
+
+  <div class="divider"></div>
+
+  <button id="select-element-btn" class="action-btn">
+    Select Element to Block
+  </button>
+
+  <button id="manage-btn" class="action-btn secondary">
+    Manage Blocked Elements
+  </button>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html> 
